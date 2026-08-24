@@ -1,3 +1,5 @@
+import 'package:tok_tok/domain/entities/VideoPost.dart';
+
 class LocalVideoModel {
   final String caption;
   final String videoUrl;
@@ -20,12 +22,12 @@ class LocalVideoModel {
     );
   }
 
-  toJson() {
-    return {
-      'caption': caption,
-      'videoUrl': videoUrl,
-      'likes': likes,
-      'views': views,
-    };
+  VideoPost toEntity() {
+    return VideoPost(
+      caption: caption,
+      videoUrl: videoUrl,
+      likes: likes,
+      views: views,
+    );
   }
 }
