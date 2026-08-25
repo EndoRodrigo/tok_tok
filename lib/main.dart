@@ -3,7 +3,6 @@ import 'package:provider/provider.dart';
 import 'package:tok_tok/config/app_theme.dart';
 import 'package:tok_tok/presentation/screams/discover/discover_scream.dart';
 import 'package:tok_tok/presentation/screams/provides/Discover_provaider.dart';
-import 'package:tok_tok/presentation/screams/widgets/shared/video_scrollable_view.dart';
 
 void main() {
   runApp(const MyApp());
@@ -25,7 +24,7 @@ class MyApp extends StatelessWidget {
       child: MaterialApp(
         title: 'Flutter Demo',
         debugShowCheckedModeBanner: false,
-        theme: AppTheme(selectedColor: 0).theme(),
+        theme: AppTheme(selectedColor: 2).theme(),
         home: DiscoverScream(),
       ),
     );
