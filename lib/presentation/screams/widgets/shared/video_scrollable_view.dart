@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:tok_tok/domain/entities/VideoPost.dart';
+import 'package:tok_tok/presentation/screams/widgets/shared/video/VideoBackground.dart';
 import 'package:tok_tok/presentation/screams/widgets/shared/video/video_player_screen.dart';
 import 'package:tok_tok/shared/video_button.dart';
 
@@ -26,6 +27,10 @@ class VideoScrollableView extends StatelessWidget {
               ),
             ),
 
+            // Gradiente
+            VideoBackground(
+              stops: const [0.8,1.0],
+            ),
 
             //Bottom buttons
             Positioned(
